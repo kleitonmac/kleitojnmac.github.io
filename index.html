@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz de Perguntas e Respostas</title>
-    <link rel="stylesheet" href="ext.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="cor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="index.js"></script>
+    <title>Portfólio</title>
 </head>
+
 <body>
+    <header>
+        <a href="#"class="logo"><span>Kl</span>eiton</a>
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="../quiz.html/index.html">Trabalhos</a></li>
+            <li><a href="#">Portfólio</a></li>
+            <li><a href="#">Contatos</a></li>
+            <li><a href="https://github.com/kleitonmac?tab=repositories">GitHub</a></li>
+            
+        </ul>
+        <div class="menu-btn">
+            <span>INTRO</span>
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
 
-<div class="quiz-container">
-    <div class="quiz-header">
-        <h2 id="quiz-title">Quiz de Conhecimentos Gerais</h2>
-        <p id="quiz-question">Qual a capital da França</p>
+    <!-- Estado Inicial -->
+    <section class="home">
+        <div class="home-text">
+            <span>Software Developer</span>
+            <h1>Kleiton Macedo</h1>
+            <p>Desenvolvedor Front End com experiência em Front-End  sempre em busca de novos desafios para evoluir profissional e pessoalmente.
+
+                Graduado em Análise e Desenvolvimento de Sistemas pela Uniasselvi, trabalho com tecnologias de Front-End como HTML5, CSS3, SASS, JavaScript, ReactJS,e Bootstrap. Também tenho sólidos conhecimentos em modelagem de bancos de dados relacionais com MySQL, Oracle, e PostgreSQL, focando em performance e escalabilidade.
+                
+                No Back-End, estou desenvolvendo habilidades com PHP.
+            Sou familiarizado com metodologias ágeis como Scrum e Kanban, além de ferramentas de versionamento de código como Git, GitHub
+        a força mais potente do universo e a fé</p>
+            <div class="main-btn">
+                <a href="#" class="btn">Download CV</a>
+                <a href="#" class="btn dois">Contrate-me agora</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="./img/kleiton.jpg" alt="Kleiton Macedo">
+        </div>
+    </section>
+
+    <div class="share">
+        <p>Verificações:</p>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            
+        </div>
     </div>
 
-    <ul class="quiz-options">
-        <li>
-            <label>
-                <input type="radio" name="question" value="1" id="option1">
-                <span id="option1Text">Paris</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="radio" name="question" value="2" id="option2">
-                <span id="option2Text">Madri</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="radio" name="question" value="3" id="option3">
-                <span id="option3Text">Lisboa</span>
-            </label>
-        </li>
-        <li>
-            <label>
-                <input type="radio" name="question" value="4" id="option4">
-                <span id="option4Text">Bruxelas</span>
-            </label>
-        </li>
-    </ul>
+</body>
 
-    <div class="quiz-footer">
-        <button id="nextBtn">Próximo</button>
-        <button id="exitBtn">Sair</button>
-        <div class="result" id="result"></div>
-    </div>
-</div>
-
-<script src="ext.js"></script>
+</html>
